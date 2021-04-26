@@ -1,0 +1,64 @@
+File Structure:
+
+ee6470_hw5/
+|-- README
+|-- hw5_report.pdf
+|-- nonsplited
+|   |-- GaussFilter.cpp
+|   |-- GaussFilter.h
+|   |-- Makefile
+|   |-- System.cpp
+|   |-- System.h
+|   |-- Testbench.cpp
+|   |-- Testbench.h
+|   |-- filter_def.h
+|   |-- lena_std_short.bmp
+|   |-- main.cpp
+|   `-- stratus
+|       |-- Makefile
+|       `-- project.tcl
+|-- report.md
+`-- splited
+    |-- GaussFilter.cpp
+    |-- GaussFilter.h
+    |-- Makefile
+    |-- System.cpp
+    |-- System.h
+    |-- Testbench.cpp
+    |-- Testbench.h
+    |-- filter_def.h
+    |-- lena_std_short.bmp
+    |-- main.cpp
+    `-- stratus
+        |-- Makefile
+        `-- project.tcl
+
+4 directories, 27 files
+
+How to run? (use lena_std_short.bmp as input image)
+
+1.		Change directory to splited/stratus, type "cd splited/stratus"
+
+2.a.	Run behavioral simulation, type "make sim_B"
+2.b.	Check result in "./bdw_work/sims/B/bdw_sim.log"
+
+3.a.	Run synthesis and Verilog simulation with HLS configuration BASIC, type "make sim_BASIC"
+3.b.	Check result in "./bdw_work/sims/V_BASIC/bdw_sim.log" and "./bdw_work/modules/GaussFilter/BASIC/stratus_hls.log"
+
+4.a.	Run synthesis and Verilog simulation with HLS configuration DPA, type "make sim_DPA"
+4.b.	Check result in "./bdw_work/sims/V_DPA/bdw_sim.log" and "./bdw_work/modules/GaussFilter/DPA/stratus_hls.log"
+
+5.		All simulation steps above will get output image as "./out.bmp"
+
+6.		Change directory to splited/stratus, type "cd nonsplited/stratus"
+
+7.a.	Run behavioral simulation, type "make sim_B"
+7.b.	Check result in "./bdw_work/sims/B/bdw_sim.log"
+
+8.a.	Run synthesis and Verilog simulation with HLS configuration BASIC, type "make sim_BASIC"
+8.b.	Check result in "./bdw_work/sims/V_BASIC/bdw_sim.log" and "./bdw_work/modules/GaussFilter/BASIC/stratus_hls.log"
+
+9.a.	Run synthesis and Verilog simulation with HLS configuration DPA, type "make sim_DPA"
+9.b.	Check result in "./bdw_work/sims/V_DPA/bdw_sim.log" and "./bdw_work/modules/GaussFilter/DPA/stratus_hls.log"
+
+10.		All simulation steps above will get output image as "./out.bmp"
