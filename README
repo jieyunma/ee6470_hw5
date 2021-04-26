@@ -37,7 +37,7 @@ ee6470_hw5/
 
 How to run? (use lena_std_short.bmp as input image)
 
-1.		Change directory to splited/stratus, type "cd splited/stratus"
+1.      Change directory to splited/stratus, type "cd splited/stratus"
 
 2.a.	Run behavioral simulation, type "make sim_B"
 2.b.	Check result in "./bdw_work/sims/B/bdw_sim.log"
@@ -50,7 +50,7 @@ How to run? (use lena_std_short.bmp as input image)
 
 5.		All simulation steps above will get output image as "./out.bmp"
 
-6.		Change directory to splited/stratus, type "cd nonsplited/stratus"
+6.		Change directory to splited/stratus, type "cd ../../nonsplited/stratus"
 
 7.a.	Run behavioral simulation, type "make sim_B"
 7.b.	Check result in "./bdw_work/sims/B/bdw_sim.log"
